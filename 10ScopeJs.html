@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in js</title>
+</head>
+<body>
+    <h1>"Scope in Javascript"</h1>
+
+    <script>
+
+
+// ......Global Scope
+c = 50;
+
+
+// ..........Local Scope
+if (true) {
+    let a = 10;
+    const b = 20;
+    var c = 30;
+// console.log(b);
+    
+}
+// console.log(c);
+// console.log(b);
+// console.log(a);
+
+
+
+// .............. Nested Scope ............... 
+function one() {
+    const name1 = "Umar Gull";
+
+    function two() {
+        const name2 = "MEER";
+        // console.log(name1);
+        // ..... The child can use the parent variable but the parent cannot be use the child variables 
+
+    }
+    // console.log(name2);
+    two()
+}
+one()
+
+
+if(true) {
+    const name1 = "Umar Gull ";
+     
+    if(true){
+
+        const name2 = "Khan Meer";
+        console.log(name1 + name2);
+    }
+    // console.log(name1);
+}
+
+function addOne(num) {
+    console.log(num + 4);
+    // return num+1;
+}
+addOne(6)
+// console.log(addOne(6));
+
+
+
+
+    </script>
+</body>
+</html>

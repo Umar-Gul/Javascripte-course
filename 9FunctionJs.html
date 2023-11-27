@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function in Js</h1>
+    <p>what is function in Js <br>
+        The block of code in a package you creat copies of this package to us everywhre you want</p>
+
+        <script>
+            // function add(a, b){
+            //     console.log(a + b); 
+            // }
+            // add(3,5)
+
+
+            function add(a, b){
+                // console.log(a + b); 
+                let result = a + b;
+                // console.log(result);
+                return result;
+            }
+            add(3,9)
+
+
+            
+
+            function loginMessage(username){
+                return `${username} just logged in`
+            }
+            // console.log(loginMessage("Umar gull") );
+
+
+            function loginMessage(username){
+                if(username === undefined){
+                    // console.log("please enter a username");
+                    return
+                }
+                return `${username} just logged in`
+            }
+            // console.log(loginMessage() );
+
+
+            function calculateCardPrice(num1){
+                return num1
+            }
+            // console.log(calculateCardPrice(2));
+            
+            //............. Rest operator: to print multiple values
+
+            function calculateCardPrice(...num1){
+                return num1
+            }
+            // console.log(calculateCardPrice(200, 3000 ,4000 ,500));
+
+            // ............. How pass object through function 
+            const user = {
+                username: "Umar Gull",
+                address: "Peshawar"
+            }
+            function handleObj(anyobject){
+             console.log(`my name is ${anyobject.username} and I belong to ${anyobject.address}`);
+
+            }
+            // handleObj(user);
+            
+            
+
+            // ...........Practice
+            function sum(a,b){
+                console.log(a+b);
+            }
+            sum(23,7)
+
+
+            // function square(a){
+            //     console.log(a*a);
+            // }
+            // square(7)
+
+           
+
+                
+            
+
+
+
+        </script>
+</body>
+</html>

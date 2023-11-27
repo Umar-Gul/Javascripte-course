@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Array in Js</h1>
+
+    <script>
+
+        const array = [1, 2, 2, 3, 4, 5, 6, 7]
+        // console.log(array);
+        // console.log(array[1]);
+        // console.log(array.toLocaleString());
+
+        // Array Methods
+
+        // array.push(8)
+        // array.pop()
+
+        // array.unshift(9)
+        // array.shift()
+        // console.log(array);
+
+        // const newArray = array.join()
+        // console.log(array);
+        // console.log(typeof array); 
+
+        // Slice & Splice
+        // const newArr = array.slice(1,5)
+        // console.log("A ", array);
+        // console.log(newArr);
+
+        // const newArr2 = array.splice(1,5)
+        // console.log("C" , newArr2);
+
+
+        // ************ "Array Functions" **************
+
+        const brothers = ["M Waxir", "Nawar Khan", "Zia ur rahman", "Ali Sher", "Umar gull"]
+        const cousins = ["Ahmad", "Ilyas", "Sami"]
+        // Push 
+        brothers.push(cousins);
+        // console.log(brothers.length);
+        // console.log(brothers);
+
+        // concat 
+        const family = brothers.concat(cousins)
+        // console.log(family);
+
+        // spread operator
+        const allfamily = [...brothers, ...cousins]
+        // console.log(allfamily);
+
+
+        const combine_array = [1, 2, 3, [4, 5, 6, [7, 8, 9]]]
+        const real_array = combine_array.flat(Infinity)
+        console.log(real_array);
+
+
+        console.log(Array.from("UMAR GUL KHAN MEER"));
+
+
+        score1 = 300;
+        score2 = 400;
+        score3 = 500;
+        console.log(Array.of(score1, score2, score3));
+
+
+    </script>
+</body>
+
+</html>

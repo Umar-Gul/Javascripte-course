@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String ib js</title>
+</head>
+<body>
+    <h1>String</h1>
+    <script>
+
+        const firstName = "Umar"
+        const lastName = "Gul"
+        const fullName = "Umar Gull Meer"
+        // console.log(firstName+lastName);
+        // console.log(`My first name is ${firstName} and my last name is ${lastName} and my full name is ${firstName+lastName}`);
+console.log(fullName);
+console.log(fullName.indexOf(`G`));
+console.log(fullName.charAt(5));
+console.log(fullName.toLocaleUpperCase());
+console.log(fullName.toUpperCase());
+console.log(fullName.toLowerCase());
+
+const newString = fullName.substring(4,8)
+console.log(newString);
+
+const anotherString = fullName.slice(-8,4)
+console.log(anotherString);
+
+const anotherName = "       Umar Gul Khan Meer"
+console.log(anotherName);
+console.log(anotherName.trim());
+console.log(anotherName.replace(`U`, `O`));
+console.log(anotherName.includes(`Khan`));
+console.log(anotherName.split(` `));
+
+
+    </script>
+</body>
+</html>

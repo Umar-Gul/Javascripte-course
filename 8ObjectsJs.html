@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects is Javascript</h1>
+    <script>
+        // Object literals
+
+        const mySym = Symbol("key1")
+
+        const myInfo = {
+            name: "Umar Gul",
+            age: 23,
+            [mySym]: "key2",
+            location: "Peshawar",
+            email: "gumar4853@gmail.com",
+            isloggedIn: true,
+            fullName: {
+                userName: {
+                    firstname: "Umer",
+                    lastname: "Gull"
+                }
+            }
+
+        }
+        console.log(myInfo.fullName.userName);
+
+        // console.log(myInfo);
+        // console.log(myInfo.location);
+        // console.log(myInfo["location"]);
+        // console.log(myInfo[mySym]);
+
+        // myInfo.name = "Gul Khan"
+        // console.log(myInfo);
+
+        // Object.freeze(myInfo)
+        // myInfo.email = "khan1212@gmail.com"
+        // console.log(myInfo);
+
+        myInfo.greeting = function() {
+            console.log("Hello js usera");
+        }
+        myInfo.greeting2 = function() {
+            console.log(`Hello my name is,${this.name}`);
+        }
+        // console.log(myInfo.greeting());
+        // console.log(myInfo.greeting2());
+
+
+// To combine objects using spread method 
+const obj1 = {1: "A", 2:"B", 3: "C"}
+const obj2 = {4: "E", 5: "F", 6: "G"}
+const obj3 = {...obj1,...obj2}
+console.log(obj3);
+
+    </script>
+
+</body>
+</html>

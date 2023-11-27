@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Amazing Images</h1>
+    <div>
+        <ul id="images">
+            <li>
+                <img width="200px" id="night" src="Cities_City_at_night.jpg" alt="">
+            </li>
+            <i>
+                <img width="200px" id="evening" src="Cities_Evening_Manhattan_New_York.jpg" alt="">
+            </i>
+            <li>
+                <img width="200px" id="Lumpur" src="Cities_Kuala_Lumpur_Malaysia.jpg" alt="">
+            </li>
+            <li><a href="https://www.google.co.uk/" id="google">Google</a></li>
+        </ul>
+    </div>
+
+
+
+<script>
+    // document.getElementById(`night`).addEventListener(`click`, function(){
+    //     alert(`click on night`)
+    // })
+
+    // document.getElementById(`night`).addEventListener(`click`, function(e){
+    //     console.log(e);
+    // },false)
+
+    // document.getElementById(`evening`).addEventListener(`click`, function(en){
+    //     console.log("click on evening");
+    //     en.stopPropagation()
+
+    // },false)
+
+
+    // document.getElementById(`google`).addEventListener(`click`, function (e){
+    //     e.preventDefault();
+    //     console.log("google clicked");
+    // })
+
+
+
+    // document.getElementById(`images`).addEventListener(`click`, function(en){
+    //     console.log("click inside the image");
+
+    // })
+
+
+document.querySelector("#images").addEventListener(`click`, function(e){
+console.log(e.target.parentNode);
+const removeIt = e.target.parentNode
+removeIt.remove()
+})
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

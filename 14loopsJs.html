@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <h2>Other loops in Javascript</h2>
+    <script>
+
+
+// ----------> for of loop 
+
+
+
+const arr = [1, 2, 3, 4, 5, 6,  7]
+for (const num of arr) {
+    // console.log(num);
+    
+}
+
+
+const greeting = "Hello world!";
+
+for (const greet of greeting) {
+    // console.log(greet);
+    
+}
+
+
+
+
+// -------->> Map Concept in Javascript 
+
+const map = new Map()
+map.set(`pak`, "Pakistan")
+map.set(`USA`, "united state of amarica")
+map.set(`UAE`, "United Arab Emirate")
+map.set(`IND`, "India")
+
+// console.log(map);
+
+for (const [key, value] of map) {
+
+    // console.log(key, ":-", value);
+    
+}
+
+
+// -----------> For in loop
+
+const myObject = {
+     js: "Java script",
+     cpp: "C++",
+     rb: "ruby"
+}
+
+for (const key in myObject) {
+//     console.log(key);
+//     console.log(myObject[key]);
+
+//     console.log(`${key} is for ${myObject}`);
+     
+        
+    }
+
+
+    const programming = ["cpp", "java", "python", "c#"]
+
+    for (const key in programming) {
+        
+        // console.log(programming[key]);
+            
+        }
+
+
+    
+
+
+        const coding = ["cpp", "java", "python", "c#"]
+
+        coding.forEach( function(val){
+            // console.log(val);
+
+        } )
+
+        const code = ["cpp", "java", "python", "c#", "Umar"]
+
+        // coding.forEach( (n) => console.log(n) )
+
+
+
+        const marks = [12, 23, 23,45, 46, 56, 68,33]
+        // marks.forEach( (n) => console.log(n) )
+
+
+
+        const brohters = ["M Waxir", "Nawax Khan", "Zia ur Rahman", "Ali Sher", "Umar Gul"]
+
+        // brohters.forEach( (bro) => console.log(bro))
+
+
+        const myName = [
+            {
+                firstname: "Umar",
+                lastName: "Gull"
+            },
+            {
+                firstname: "Umer",
+                lastName: "Khan"
+            },
+            {
+                firstname: "Gul",
+                lastName: "Khan"
+            },
+        ]
+        // myName.forEach( (name) => console.log(name.firstname))
+
+
+
+        // ----------> Filter 
+
+        const myNumber = [4, 5, 6, 9, 6, 7, 12, 34, 45, 78, 89]
+        
+        const newNum = myNumber.filter( (num) => num > 11 )
+
+            
+            // console.log(newNum);
+
+
+
+
+            const table = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+          const  newtab = table.filter( (num) => num > 12  )
+
+            // console.log(newtab);
+
+
+          
+// ----------------------> Map Method
+
+
+
+myValue = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+const newval = myValue.map( (num) => num + 10  )
+// console.log(newval);
+
+
+
+
+
+// -------------->> Chaining Method
+
+
+const test = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
+let newtest = test
+                 .map( (num) => num*10 )
+                 .map((num)=> num - 5)
+                 .filter((num) => num >= 50)
+                 
+// console.log(newtest);
+
+
+
+
+
+// -----------> Reduce Method 
+
+
+
+let Number = [1, 2, 3]
+let newNumb = Number.reduce((acc, curr) => acc + curr, 0)
+console.log(newNumb);
+
+
+const shopingCard = [
+    {
+        itemName: "Dairy milk",
+        price: "299"
+    },
+    {
+        itemName: "lays",
+        price: "99"
+    },
+    {
+        itemName: "cocomo",
+        price: "80"
+    },
+]
+
+const priceToPay = shopingCard.reduce((acc, item) => acc + item.price, 0)
+// console.log(priceToPay);
+
+
+
+// ----------> Sort 
+
+const a = [4, 5, 2,12, 32, 3, 2, 1 ]
+const b = a.sort (a,b) 
+    return a+b ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>loop or iteration in Js</h1>
+    <script>
+
+// -------------> For loop 
+
+for (let index = 0; index <= 10; index++) {
+    const element = index;
+    if(index == 7){
+        // console.log("My favourite number is 7");
+    }
+    // console.log(index);
+    
+}
+
+
+// -----------> Nested loop
+
+for (let i = 1; i <= 10; i++) {
+    // console.log(`The table of : ${i}`);
+    for (let j = 1; j <= 10; j++) {
+        // console.log(`Inner loop values: ${j}`);
+        // console.log(i  + " * " + j + " = " + i*j);
+        
+    }
+    
+}
+
+
+const array = ["Umar", "Gul", "Khan", "Meer"]
+
+for (let index = 0; index < array.length; index++) {
+
+
+    // const element = array[index]
+// console.log(element);    
+
+
+
+// console.log(array[index]);    
+}
+
+
+
+
+// ---------> Break and continue statement 
+   
+for (let index = 0; index < 20; index++) {
+    if (index == 5) {
+        
+        console.log("This is The value of 5");
+        break
+    }
+    console.log(index);
+    
+}
+
+
+
+
+for (let index = 0; index < 20; index++) {
+    if (index == 5) {
+        
+        // console.log("This is The value of 5");
+        continue
+    }
+    // console.log(index);
+    
+}
+
+ 
+// -------> While loop
+
+let i = 0;
+while (i <= 10) {
+    console.log(`The value of index is : ${i}`);
+    i = i+2;
+    
+}
+
+
+
+let myArray = ["Umar", "Gull", "Khan", "Meer"]
+let arr = 0;
+while (arr < myArray.length) {
+    console.log(`The value of ${myArray[arr]}`);
+    arr = arr++ ;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

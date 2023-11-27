@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <h1> This and arrow function in javascript concept</h1>
+
+    <script>
+
+const user = {
+    usename: "Umar Gul",
+    address: "Peshawar",
+    wellcomeMessage: function(){
+    console.log(`${this.usename}, well come to my home town `);
+    console.log(this);
+    
+    }
+}
+// user.wellcomeMessage()
+// user.usename = "Khan"
+// user.wellcomeMessage()
+
+// console.log(this);
+
+
+
+function me() {
+    let username = "Umar gul khan ";
+    console.log(username);
+}
+// me()
+
+
+// ........... Arrow function 
+
+// ............ Explicit return 
+const addTwo = (num1, num2) => {
+    return num1 + num2 ;
+}
+console.log(addTwo(3, 4));
+
+// ...... Emplicit return 
+
+const addition = (num1, num2) => num1 + num2 ;
+
+console.log(addTwo(3, 7));
+
+const name = () => ({usename: "Umar Gul"})
+console.log(name());
+
+// ............. Practice ......... 
+const add = (a, b) => a + b
+console.log(add(8, 12));
+
+const square = (n) => n*n ;
+console.log(square(5));
+
+const cube = (n) => n*n*n ;
+console.log(cube(3));
+
+
+
+
+
+
+    </script>
+</body>
+</html>
