@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPs in Js</title>
+</head>
+
+<body>
+
+    <script>
+
+        // ------- > Object Literal 
+
+        const user = {
+            username: "Umar",
+            Email: "example@gmail.com",
+            logInCount: 8,
+            signedIn: true,
+
+            getUserDetails: function () {
+                console.log("got use details from database");
+                console.log(`username: ${this.username}`);
+            }
+        }
+        // console.log(user);
+        // console.log(user.username);
+        // console.log(user.Email);
+        // console.log(user.getUserDetails());
+
+
+
+
+        // ------------> Constructor function 
+
+        function User(username, email, phone) {
+
+            this.username = username;
+            this.email = email;
+            this.phone = phone,
+
+                this.greeting = function () {
+                    console.log(`wellcome ${username}`);
+
+                }
+        }
+        const userOne = new User("Umar", "example@email.com", 123456789)
+        const userTwo = new User("Gul", "example@email.com", 987654321)
+        console.log(userOne.constructor);
+        console.log(userTwo);
+
+
+    </script>
+
+
+</body>
+
+</html>
